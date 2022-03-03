@@ -8,13 +8,16 @@ package chess;
  *
  * @author lucas
  */
-public class ChessException  extends RuntimeException{
-    private static final long serialVersionUID = 1L;
+import boardgame.BoardException;
 
-    public ChessException(String message) {
-        super(message);
-    }
-    
-    
-    
+public class ChessException extends BoardException {
+	private static final long serialVersionUID = 1L;
+
+	public ChessException(String message) {
+		super(message);
+	}
 }
+    
+    
+    
+
