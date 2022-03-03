@@ -8,6 +8,7 @@ import chess.ChessException;
 import chess.ChessMatch;
 import chess.ChessPiece;
 import chess.ChessPosition;
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 /**
@@ -42,7 +43,10 @@ public class Program {
             {
                 System.out.println(e.getMessage());
                 sc.nextLine();
-            }
+            }catch (RuntimeException e)
+        {
+            throw new InputMismatchException("Error reading ChessPosition");
+        }
         }
     }
 
