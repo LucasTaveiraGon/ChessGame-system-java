@@ -9,6 +9,7 @@ import boardgame.Piece;
 import boardgame.Position;
 
 import chess.pieces.King;
+import chess.pieces.Queen;
 import chess.pieces.Rook;
 import java.util.ArrayList;
 import java.util.List;
